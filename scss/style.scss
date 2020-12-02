@@ -1,0 +1,92 @@
+/* Global */
+
+$dark-grey-color: #333333;
+
+.header-menu, .header-menu ul, .header-container, .content-info, .content-skill, footer {
+	display: flex;
+}
+
+.header-menu ul, footer {
+	justify-content: center;
+}
+
+.header-container {
+	flex-direction: column;
+}
+
+.content-title {
+	flex-grow: 1;
+}
+
+.info-text, .skill-text {
+	flex-basis: 70%;
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+   font-size: 50px;
+}
+
+h2 {
+   font-size: 40px;
+}
+
+h3 {
+
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+hr.separator {
+   height: 15px;
+   background: red;
+   margin: 0;
+   width: 20%;
+}
+
+/* Header */
+
+.header-menu {
+   padding: 10px;
+   background-color: $dark-grey-color;
+
+   ul {
+      width: 50%;
+      margin: 0 auto;
+
+      li {
+         flex-basis: 33%;
+         text-align: center;
+
+         a {
+         	color: lightblue;
+         	text-decoration: none;
+         }
+
+         a:hover {
+         	   color: violet;
+         }
+      }
+   }
+}
+
+.header-container {
+	width: 40%;
+    margin: 0 auto;
+    padding: 7% 0;
+}
+
+/* Info */
+
+/* Skill */
+
+/* Footer */
