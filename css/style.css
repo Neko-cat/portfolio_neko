@@ -13,22 +13,36 @@
 
 .content-title {
   flex-grow: 1;
+  padding: 0px 3%;
 }
 
 .info-text, .skill-text {
   flex-basis: 70%;
+  margin: 29px 0;
 }
 
-body {
+.content-info, .content-skill {
+  margin: 4% 0;
+}
+
+body, p {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-  font-size: 50px;
+  font-family: "Major Mono Display", monospace;
+  font-size: 65px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 60px;
+}
+
+h3 {
+  margin: 25px 0;
+  font-size: 58px;
+  font-family: "Major Mono Display", monospace;
 }
 
 ul {
@@ -75,6 +89,22 @@ hr.separator {
 
 /* Info */
 /* Skill */
+.skill-text div {
+  display: flex;
+}
+.skill-text div span {
+  width: 50%;
+}
+
 /* Footer */
+footer {
+  padding: 3% 0;
+  background-color: #333333;
+}
+footer i {
+  padding: 0 20px;
+  font-size: 2.5rem;
+  color: dodgerblue;
+}
 
 /*# sourceMappingURL=style.css.map */
