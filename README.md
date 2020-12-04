@@ -1,5 +1,5 @@
-Hello :)
+## **Hello :)**
 
-Is my new portfolio !
+> Is my new portfolio !
 
-WIP.
+> WIP.
