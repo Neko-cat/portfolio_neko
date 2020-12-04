@@ -112,6 +112,21 @@ header .header-menu ul li a:hover {
 header .separator {
   background: #2A9D8F;
 }
+header .header-title {
+  position: relative;
+  animation: pop 1.5s ease 1;
+}
+@keyframes pop {
+  from {
+    top: 0px;
+  }
+  50% {
+    top: 40px;
+  }
+  to {
+    top: 0px;
+  }
+}
 
 .header-container {
   width: 40%;
@@ -145,6 +160,24 @@ header .separator {
 }
 .content-skill .skill-text div {
   display: flex;
+}
+.content-skill .skill-text div span {
+  position: relative;
+}
+.content-skill .skill-text div span:hover {
+  animation: slide 1s ease 1;
+  color: #F4A261;
+}
+@keyframes slide {
+  from {
+    left: 0px;
+  }
+  50% {
+    left: 5px;
+  }
+  to {
+    left: 0px;
+  }
 }
 .content-skill .skill-text span {
   width: 50%;

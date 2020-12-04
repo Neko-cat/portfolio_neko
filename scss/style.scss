@@ -131,6 +131,17 @@ header {
    .separator {
       background: $english-lavender;
    }
+
+   .header-title {
+      position: relative;
+      animation: pop 1.5s ease 1;
+   }
+
+   @keyframes pop {
+      from {top: 0px;}
+      50%  {top: 40px;}
+      to   {top: 0px;}
+   }
 }
 
 
@@ -178,6 +189,21 @@ header {
 
       div {
          display: flex;
+
+         span {
+            position: relative;
+         }
+
+         span:hover {
+            animation: slide 1s ease 1;
+            color: $melon;
+         }
+
+         @keyframes slide {
+            from {left: 0px;}
+            50%  {left: 5px;}
+            to   {left: 0px;}
+         }
       }
 
       span {
@@ -198,7 +224,6 @@ header {
       
    }
 }
-
 
 
 /* Footer */
