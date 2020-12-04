@@ -13,16 +13,25 @@
 
 .content-title {
   flex-grow: 1;
-  padding: 0px 3%;
+  padding: 5%;
+}
+
+.content-wrapper {
+  background: #fdfcdc;
 }
 
 .info-text, .skill-text {
   flex-basis: 70%;
-  margin: 29px 0;
+  padding: 5%;
+  color: #fdfcdc;
 }
 
 .content-info, .content-skill {
-  margin: 4% 0;
+  margin: 80px 0;
+}
+
+body, html {
+  height: 100%;
 }
 
 body, p {
@@ -33,10 +42,17 @@ body, p {
 h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 65px;
+  color: #2A9D8F;
 }
 
 h2 {
-  font-size: 60px;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fdfcdc;
+  background: #2A9D8F;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -55,56 +71,110 @@ li {
 
 hr.separator {
   height: 15px;
-  background: red;
+  background: white;
   margin: 0;
   width: 20%;
+  border: none;
 }
 
 /* Header */
-.header-menu {
-  padding: 10px;
-  background-color: #333333;
+header {
+  height: 90vh;
+  padding: 5% 0;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.header-menu ul {
+header .header-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.8%;
+  background-color: #264653;
+}
+header .header-menu ul {
   width: 50%;
   margin: 0 auto;
+  text-transform: uppercase;
 }
-.header-menu ul li {
+header .header-menu ul li {
   flex-basis: 33%;
   text-align: center;
 }
-.header-menu ul li a {
-  color: lightblue;
+header .header-menu ul li a {
+  color: #fdfcdc;
   text-decoration: none;
 }
-.header-menu ul li a:hover {
-  color: violet;
+header .header-menu ul li a:hover {
+  color: #F4A261;
+}
+header .separator {
+  background: #2A9D8F;
 }
 
 .header-container {
   width: 40%;
+  height: 100%;
   margin: 0 auto;
   padding: 7% 0;
 }
 
 /* Info */
+.content-info .content-title {
+  background: #F4A261;
+  color: #fdfcdc;
+}
+.content-info hr {
+  background: #fdfcdc;
+}
+.content-info .info-text {
+  background: #2A9D8F;
+}
+
 /* Skill */
-.skill-text div {
+.content-skill .content-title {
+  background: #E76F51;
+  color: #fdfcdc;
+}
+.content-skill hr {
+  background: #fdfcdc;
+}
+.content-skill .skill-text {
+  background: #2A9D8F;
+}
+.content-skill .skill-text div {
   display: flex;
 }
-.skill-text div span {
+.content-skill .skill-text span {
   width: 50%;
+  padding: 15px;
+  margin: 10px;
+  background: #264653;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
+  color: #fdfcdc;
+  text-transform: uppercase;
+}
+.content-skill .skill-text span i {
+  margin-right: 10px;
 }
 
 /* Footer */
 footer {
   padding: 3% 0;
-  background-color: #333333;
+  background-color: #264653;
 }
 footer i {
   padding: 0 20px;
   font-size: 2.5rem;
-  color: dodgerblue;
+  color: #fdfcdc;
 }
+footer i:hover {
+  color: #F4A261;
+}
+
+/* Mobile */
 
 /*# sourceMappingURL=style.css.map */
