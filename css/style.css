@@ -212,5 +212,43 @@ footer i:hover {
 }
 
 /* Mobile */
+@media (max-width: 1105px) {
+  header {
+    height: 100%;
+  }
+  header .header-container {
+    width: 50%;
+  }
+  header .header-container h1 {
+    font-size: 50px;
+  }
+  header .header-container h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 910px) {
+  .content-info, .content-skill {
+    flex-direction: column;
+  }
+}
+@media (max-width: 750px) {
+  header {
+    height: 100%;
+  }
+  header .header-menu ul {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  header .header-container {
+    width: 80%;
+  }
+  header .header-container h1 {
+    font-size: 50px;
+  }
+  header .header-container h2 {
+    font-size: 35px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
